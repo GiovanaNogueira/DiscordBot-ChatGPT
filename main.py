@@ -4,10 +4,8 @@ from bs4 import BeautifulSoup
 import os
 import json
 
-# https://www.hashtagtreinamentos.com/como-usar-api-do-chatgpt?gad=1&gclid=CjwKCAjw4P6oBhBsEiwAKYVkq7qWoRdtImqMcTSJtsE4VlcZL2FsbalF6j1hrTrk9HaXSG-QfzAB5xoCIIAQAvD_BwE
 
-
-TOKEN = "MTE1ODM2MjYwMDM1OTMyOTgwNA.G9wmaC.S20ILme-cU_M5g9MbIATIEbNeRIghql_t63yXY"
+TOKEN = os.environ['discord_bot_token']
 intents = discord.Intents.all() 
 client = discord.Client(intents = intents)
 API_Key = os.environ['api_key']
